@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Hosting Service</title>
 </head>
+
 <body>
     <!--------------------Header Section Design------------------------>
-    <header class="background">
-        <div class="container">
-            <nav class="navbar">
-                <div class="brand">
-                    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-                </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#home" class="nav-link">Adversite</a></li>
-                    <li class="nav-item"><a href="#home" class="nav-link">Supports</a></li>
-                    <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
-                </ul> 
-                <div class="social d-flex">
-                    <div class="d-flex">
-                        <img src="img/lock.png" alt="">
-                        <a href="#" class="login">Login</a>
-                    </div>
-                    <a href="#" class="Community">Join Community</a>
-                </div> 
-            </nav>
+    <nav class="navbar">
+        <div class="brand">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
         </div>
-    </header>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link">Adversite</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link">Supports</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
+        </ul>
+        <div class="social">
+            <img src="img/lock.png" alt=""><a href="#" class="login">Login</a>
+            <a href="#" class="Community">Join Community</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 form-area">
+                    <div class="form-box">
+                        <h1>Built your business with a website</h1>
+                        <form>
+                            <input type="text" placeholder="Your domain name" class="domain-input">
+                            <div type="text" class="domain-select">
+                                <select name="select" id="select">
+                                    <option value=".com">.com</option>
+                                    <option value=".org">.org</option>
+                                    <option value=".bd">.bd</option>
+                                    <option value=".xyz">.xyz</option>
+                                    <option value=".pk">.pk</option>
+                                </select>
+                            </div>
+                        </form>
+                        <input type="submit" class="btn btn-submit" value="Submit">
+                    </div>
+                </div>
+                <div class="col-6 hero-img">
+                    <img src="img/illustration.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
