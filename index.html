@@ -1,35 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style/mediaQuery.css">
     <title>Hosting Service</title>
 </head>
+
 <body>
     <!--------------------Header Section Design------------------------>
-    <header class="background">
-        <div class="container">
-            <nav class="navbar">
-                <div class="brand">
-                    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-                </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#home" class="nav-link">Adversite</a></li>
-                    <li class="nav-item"><a href="#home" class="nav-link">Supports</a></li>
-                    <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
-                </ul> 
-                <div class="social d-flex">
-                    <div class="d-flex">
-                        <img src="img/lock.png" alt="">
-                        <a href="#" class="login">Login</a>
-                    </div>
-                    <a href="#" class="Community">Join Community</a>
-                </div> 
-            </nav>
+    <nav class="navbar">
+        <div class="brand">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
         </div>
-    </header>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link">Adversite</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link">Supports</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
+        </ul>
+        <div class="social">
+            <img src="img/lock.png" alt=""><a href="#" class="login">Login</a>
+            <a href="#" class="Community">Join Community</a>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 form-area">
+                    <div class="form-box">
+                        <h1>Built your business with a website</h1>
+                        <form>
+                            <input type="text" placeholder="Your domain name" class="domain-input">
+                            <div type="text" class="domain-select">
+                                <select name="select" id="select">
+                                    <option value=".com">.com</option>
+                                    <option value=".org">.org</option>
+                                    <option value=".bd">.bd</option>
+                                    <option value=".xyz">.xyz</option>
+                                    <option value=".pk">.pk</option>
+                                </select>
+                            </div>
+                        </form>
+                        <input type="submit" class="btn btn-submit" value="Submit">
+                    </div>
+                </div>
+                <div class="col-6 hero-img">
+                    <img src="img/illustration.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------Services Section Design------------------------>
+    <section id="services" class="section-padding">
+       <div class="container">
+        <div class="services-box">
+            <div class="section-header">
+                <h4><span>Ideal solutions for you</span></h4>
+                <h2>Didn't find what you were looking for?</h2>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="singel-box">
+                        <h4>Cloud Hosting</h4>
+                        <p><span>$0.63/mo</span></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="singel-box">
+                        <h4>Web Hosting</h4>
+                        <p><span>$0.63/mo</span></p>
+                    </div>
+                </div>
+                <div class="col-4 active">
+                    <div class="singel-box">
+                        <h4>VPS Hosting</h4>
+                        <p><span>$0.63/mo</span></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="singel-box">
+                        <h4>Wordpress Hosting</h4>
+                        <p><span>$0.63/mo</span></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="singel-box">
+                        <h4>Domains</h4>
+                        <p><span>$0.63/mo</span></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="singel-box">
+                        <h4>Email Hosting</h4>
+                        <p><span>$0.63/mo</span></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="singel-box">
+                        <h4>VPN Service</h4>
+                        <p><span>$0.63/mo</span></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="singel-box">
+                        <h4>Image Cloud</h4>
+                        <p><span>$0.63/mo</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class="mockup section-padding">
+        <div class="row">
+            <div class="col-2">
+                <div class="col-2-img">
+                    <img src="img/mock.png" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-2-accrodion">
+                    <div class="accrodion-head">
+                        <h4><span>Website content builder</span></h4>
+                    <h2>Meet our premium features
+                        that will make you wow</h2>
+                        <p>Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents.</p>
+                    </div>
+                    <div class="accrodion-item">
+                        <div>
+                            <h4 id="">Organize your project content</h4><i id="" class="fa-solid fa-plus"></i>
+                        </div>
+                        <p id="">Get your website ads tests delivered at let collect sample from the victory of the managments that supplies best design system which guidelines ever with multiple features.</p>
+                    </div>
+                    <div class="accrodion-item">
+                        <div>
+                            <h4 id="">Collaborate your multiple team support easily</h4><i id="" class="fa-solid fa-plus"></i>
+                        </div>
+                        <p id="">Get your website ads tests delivered at let collect sample from the victory of the managments that supplies best design system which guidelines ever with multiple features.</p>
+                    </div>
+                    <div class="accrodion-item">
+                        <div>
+                            <h4 id="">Build your team's knowledge base system</h4><i id="" class="fa-solid fa-plus"></i>
+                        </div>
+                        <p id="">Get your website ads tests delivered at let collect sample from the victory of the managments that supplies best design system which guidelines ever with multiple features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
